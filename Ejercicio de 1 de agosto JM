@@ -1,0 +1,21 @@
+Module Program
+    Sub Main(args As String())
+        Dim Variable As Integer
+        Console.WriteLine("Menu")
+        Do Until Variable = 4
+            Console.WriteLine("Dato ingresado correctamente")
+            Console.WriteLine("Dato ingresado incorrectamente")
+            Console.WriteLine("iNGRESE SU NOMBRE Y APELLIDO")
+            Console.WriteLine("Cancelar/Salir/Cerrar")
+            Variable = Console.ReadLine
+            If Variable = 1 Then
+                Console.WriteLine("Dato ingresado correctamente")
+            ElseIf Variable = 2 Then
+                Console.WriteLine("Dato ingresado incorrectamente")
+            ElseIf Variable = 3 Then
+                Console.WriteLine("Ingrese su nombre y apellido")
+            End If
+            Console.WriteLine("Cancelar/Salir/Cerrar")
+        Loop
+    End Sub
+End Module
